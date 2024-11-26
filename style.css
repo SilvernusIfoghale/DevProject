@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* section 1 starts here  */
+.topContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topContent {
+  width: 85%;
+  padding-top: 40px;
+}
+
+.topNav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid silver;
+  padding-bottom: 40px;
+}
+.topNav h1 span {
+  color: aqua;
+}
+.navLink {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navLink li a {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.navLink li a:hover {
+  color: aqua;
+}
+.heroSection {
+  margin: 30px 0;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 25%;
+}
+.column img {
+  vertical-align: middle;
+  width: 100%;
+  padding: 5px;
+}
+.arrow {
+  text-align: center;
+  margin: 30px 0;
+}
+.arrow b {
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+.arrow p {
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%; /* makes it to become 2 columns  */
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%; /* makes it single column  */
+  }
+}
+/* section 1 ends here  */
