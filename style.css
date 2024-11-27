@@ -81,3 +81,83 @@ body {
   }
 }
 /* section 1 ends here  */
+
+
+/* Section 2 begins  */
+
+.section-two {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.inner-container {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.inner-row {
+  display: flex;
+  width: 100%;
+  padding: 60px 0;
+  border-bottom: 2px solid grey;
+ 
+}
+
+.inner-row h2 {
+  width: 40%;
+  font-size: 2.4rem;
+}
+
+.inner-row h2 span {
+  color: aqua;
+}
+
+.inner-row .icon {
+  width: 20%;
+  text-align: center;
+}
+
+.bodyText {
+  width: 50%;
+  padding: 0 20px;
+  line-height: 28px;
+}
+
+.no-border-down {
+  border-bottom: none;
+}
+
+@media screen and (max-width: 768px) {
+    .inner-row .icon  {
+     display: none; /* hides the icon*/
+    }
+}
+@media screen and (max-width: 600px) {
+  .inner-container {
+    width: 90%;
+  }
+
+  .inner-row  {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+
+  .inner-row h2 {
+    width: 100%;
+  }
+  .bodyText {
+    width: 100%;
+    padding: unset;
+  }
+}
+
+/* Section 2 ends here  */
